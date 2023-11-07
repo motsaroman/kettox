@@ -84,7 +84,7 @@
     position: fixed;
     display: flex;
     top: 50%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
     width: 100%;
@@ -218,9 +218,7 @@
 }
 
 @media (max-width: 576px) {
-    .popup {
-        left: 50%;
-    }
+
     .popup .perview__form {
         width: 100%;
         padding: 38px 20px 40px 20px;
