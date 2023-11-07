@@ -198,6 +198,7 @@
 
     .methods__eat-item {
         justify-self: center;
+        width: 100%;
         max-width: 100%;
     }
     .methods__title {
@@ -213,4 +214,12 @@
     .methods__eat-item:nth-child(4) {
         justify-self: center;
     }
+    .methods__eat-item:nth-child(6) .methods__eat-item-img {
+        position: relative;
+        left: 40px;
+    }
+    .methods__eat-item:nth-child(6) .methods__eat-item-img:before {
+        content: '';
+        top: 11px;
+        left: 35px;
 }
