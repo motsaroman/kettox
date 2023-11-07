@@ -6,7 +6,7 @@
     padding-bottom: 70px;
 }
 .section-perview:last-child {
-    padding-bottom: 46px;
+    padding-bottom: 0px;
 }
 .preview__wrap {
     max-width: 1213px;
