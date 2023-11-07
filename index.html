@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kettox</title>
+    <link type="image/x-icon" href="/assets/favicon/Favicon.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="/assets/favicon/Favicon.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/preview-block.css">
+    <link rel="stylesheet" href="./styles/progress.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
+    <link rel="stylesheet" href="./styles/methods.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+
+<body>
+    <div class="popup__wrap">
+    </div>
+    <div class="popup" id="myPopup">
+        <div class="popup-img mobile-hide">
+            <img src="./assets/images/popup-img.png" alt="popup">
+        </div>
+        <form class="perview__form">
+            <h3 class="popup__sale">До конца акции:</h3>
+            <div class="time-wrap">
+                <div class="time__item">
+                    <div class="hours time-count"></div>
+                    <div>часов</div>
+                </div>
+                <div class="time__item">
+                    <div class="minutes time-count"></div>
+                    <div>минут</div>
+                </div>
+
+                <div class="time__item">
+                    <div class="seconds time-count"></div>
+                    <div>секунд</div>
+                </div>
+            </div>
+            <div class="popup__text">Успейте оформить заказ по промо-цене
+                с доставкой в %User_IP_GEO%"</div>
+            <div class="popup__promo">Промо-цена:</div>
+            <div class="popup__price">142 руб</div>
+            <div class="perview__form-inputs">
+                <label>Введите вашем имя</label>
+                <input class="input-name" type="text" placeholder="Иванова И. И.">
+                <label>Введите ваш телефон</label>
+                <input type="text" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+            </div>
+            <button class="perview__form-btn" type="submit">ЗАКАЗАТЬ KETTOX</button>
+            <p class="perview__form-text">Купили за сегодня: 52 чел.</p>
+        </form>
+    </div>
+
+    </div>
+    <div class="modal-wrap mobile-hide" id="modal1">
+        <div class="modal">
+            <div class="closeModal"></div>
+            <div class="modal-icon">
+                <img src="./assets/images/Icon-People.png" alt="people">
+            </div>
+            <div class="modal-info">
+                <div class="modal-info-title"> Количество посетителей на сайте:</div>
+                <div class="modal-info-number">172</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap mobile-hide" id="modal2">
+        <div class="modal">
+            <div class="closeModal"></div>
+            <div class="modal-icon">
+                <img src="./assets/images/phone.png" alt="people">
+            </div>
+            <div class="modal-info">
+                <div>Ольга М. сделала заявку на обратный звонок</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap mobile-hide" id="modal3">
+        <div class="modal">
+            <div class="closeModal"></div>
+            <div class="modal-icon">
+                <img src="./assets/images/phone.png" alt="people">
+            </div>
+            <div class="modal-info">
+                <div>Ольга М. только что совершила покупку на сумму 5 600 руб.</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header-mobile__title hide">KETTOX® Комфортная замена кето диеты</div>
+                <div class="header-img mobile-hide">
+                    <img src="./assets/images/header-img.png" alt="header-img">
+                </div>
+                <div class="header-logo mobile-hide">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </div>
+                <div class="header__info mobile-hide">
+                    <div class="header-info__text">
+                        100% эффективная<br> формула
+                    </div>
+                    <div class="header-info__delivery">
+                        Бесконтактная доставка<br> по всей России
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section-perview">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="preview__wrap">
+                    <div class="preview-block">
+                        <div class="preview__info">
+                            <h1 class="h1">KETTOX – ЗАМЕНА КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h1>
+                            <h2 class="h2">С новым средством KETTOX можно сжечь до 17 кг жира, не прибегая к мучительной
+                                кето диете
+                            </h2>
+                        </div>
+                        <div class="preview__info-block">
+                            <div class="preview__img">
+                                <img src="./assets/images/goroh.png" alt="goroh">
+                            </div>
+                            <ul class="preview__list">
+                                <li class="preview__list-item">Вызывает состояние “кетоза” с первого применения </li>
+                                <li class="preview__list-item">Блокирует усвоение калорий из пищи</li>
+                                <li class="preview__list-item">Переключает организм на сжигание жира </li>
+                                <li class="preview__list-item">Без необходимости отказа от привычного питания</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="perview__product">
+                        <img src="./assets/images/kettox.png">
+                    </div>
+                    <div class="preview__info-block-mobile">
+                        <div class="preview__img">
+                            <img src="./assets/images/goroh.png" alt="goroh">
+                        </div>
+                        <ul class="preview__list">
+                            <li class="preview__list-item">Вызывает состояние “кетоза” с первого применения </li>
+                            <li class="preview__list-item">Блокирует усвоение калорий из пищи</li>
+                            <li class="preview__list-item">Переключает организм на сжигание жира </li>
+                            <li class="preview__list-item">Без необходимости отказа от привычного питания</li>
+                        </ul>
+                    </div>
+                    <form class="perview__form">
+                        <h3 class="h3">Акция действует только<br> на территории России и стран СНГ</h3>
+                        <div class="perview__form-price">
+                            <div class="perview__form-price-info">
+                                <div class="perview__form-price-old">Старая цена</div>
+                                <div class="perview__form-price-num">3889 руб</div>
+                            </div>
+                            <div class="perview__form-price-info">
+                                <div class="perview__form-price-new mobile-hide">Новая цена:</div>
+                                <div class="perview__form-price-new mobile-show hide">Промо-цена:</div>
+                                <div class="perview__form-price-num mobile-hide">142 руб</div>
+                                <div class="perview__form-price-num mobile-show hide">147*</div>
+                            </div>
+                        </div>
+                        <div class="perview__form-inputs">
+                            <label>Введите вашем имя</label>
+                            <input class="input-name" type="text" placeholder="Иванова И. И.">
+                            <label>Введите ваш телефон</label>
+                            <input type="text" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+                        </div>
+                        <p class="perview__form-text mobile-hide">Осталось всего 5 приборов на российском складе! НЕ
+                            УПУСТИ
+                            СВОЙ ШАНС! </p>
+                        <p class="perview__form-text mobile-show hide">Осталось упаковок со скидкой: <span>48</span> шт.
+                        </p>
+                        <button class="perview__form-btn" type="submit">ЗАКАЗАТЬ KETTOX</button>
+                        <div class="perview__form-agreement">
+                            <div class="perview__form-agreement-icon mobile-hide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" viewBox="0 0 27 32"
+                                    fill="none">
+                                    <path
+                                        d="M26.9261 4.99968C21.364 4.99968 17.1028 3.43964 13.4995 0C9.89658 3.43964 5.63558 4.99968 0.0738771 4.99968C0.0738771 13.9572 -1.81419 26.7888 13.4994 32C28.8141 26.7889 26.9261 13.9573 26.9261 4.99968ZM12.3873 20.7625L7.91428 16.3707L9.917 14.4048L12.3873 16.8304L17.0825 12.2211L19.0851 14.187L12.3873 20.7625Z"
+                                        fill="#E7E7E7" />
+                                </svg>
+                            </div>
+                            <p class="perview__form-agreement-text mobile-hide">Мы не разглашаем Ваши личные данные и не
+                                передаем оставленную Вами информацию третьим лицам.
+                                * При заказе курса</p>
+                            <p class="perview__form-alternate-text mobile-show hide">Уже получили на этой неделе: 297
+                                чел.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="progress">
+                <div class="progress__title">Как быстро Вы похудеете с помощью KETTOX?</div>
+                <div class="progress__cards mobile-hide">
+                    <div class="progress__cards-item">
+                        <div class="progress__cards-item-title">1-2 НЕДЕЛЯ</div>
+                        <ul class="progress__cards-item-ul">
+                            <li class="progress__cards-item-list">
+                                Уходит 2-4 килограмма
+                            </li>
+                            <li class="progress__cards-item-list">
+                                Очищение организма от шлаков, необходимо пить много воды
+                            </li>
+                            <li class="progress__cards-item-list">
+                                Снижается аппетит, уходит чувство голода
+                            </li>
+                        </ul>
+                        <div class="progress__cards-item-img">
+                            <img src="./assets/images/card-img-1.png" alt="progress">
+                        </div>
+                    </div>
+                    <div class="progress__cards-item">
+                        <div class="progress__cards-item-title">3-4 НЕДЕЛЯ</div>
+                        <ul class="progress__cards-item-ul">
+                            <li class="progress__cards-item-list">
+                                Потеря веса достигает 10 килограммов
+                            </li>
+                            <li class="progress__cards-item-list">
+                                Жир уходит из самых труднодоступных мест
+                            </li>
+                            <li class="progress__cards-item-list">
+                                Ваш метаболизм возвращается в нормальный темп
+                            </li>
+                        </ul>
+                        <div class="progress__cards-item-img">
+                            <img src="./assets/images/card-img-2.png" alt="progress">
+                        </div>
+                    </div>
+                    <div class="progress__cards-item">
+                        <div class="progress__cards-item-title">5-6 НЕДЕЛЯ</div>
+                        <ul class="progress__cards-item-ul">
+                            <li class="progress__cards-item-list">
+                                Общая потеря веса за курс от 13 до 17 кг и больше
+                            </li>
+                            <li class="progress__cards-item-list">
+                                Вы больше не переедаете, питаетесь правильно
+                            </li>
+                            <li class="progress__cards-item-list">
+                                Вес стабилизируется, жир не накапливается
+                            </li>
+                        </ul>
+                        <div class="progress__cards-item-img">
+                            <img src="./assets/images/card-img-3.png" alt="progress">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper hide mobile-show">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="progress__cards-item">
+                                <div class="progress__cards-item-title">1-2 НЕДЕЛЯ</div>
+                                <ul class="progress__cards-item-ul">
+                                    <li class="progress__cards-item-list">
+                                        Уходит 2-4 килограмма
+                                    </li>
+                                    <li class="progress__cards-item-list">
+                                        Очищение организма от шлаков, необходимо пить много воды
+                                    </li>
+                                    <li class="progress__cards-item-list">
+                                        Снижается аппетит, уходит чувство голода
+                                    </li>
+                                </ul>
+                                <div class="progress__cards-item-img">
+                                    <img src="./assets/images/card-img-1.png" alt="progress">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="progress__cards-item">
+                                <div class="progress__cards-item-title">3-4 НЕДЕЛЯ</div>
+                                <ul class="progress__cards-item-ul">
+                                    <li class="progress__cards-item-list">
+                                        Потеря веса достигает 10 килограммов
+                                    </li>
+                                    <li class="progress__cards-item-list">
+                                        Жир уходит из самых труднодоступных мест
+                                    </li>
+                                    <li class="progress__cards-item-list">
+                                        Ваш метаболизм возвращается в нормальный темп
+                                    </li>
+                                </ul>
+                                <div class="progress__cards-item-img">
+                                    <img src="./assets/images/card-img-2.png" alt="progress">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="progress__cards-item">
+                                <div class="progress__cards-item-title">5-6 НЕДЕЛЯ</div>
+                                <ul class="progress__cards-item-ul">
+                                    <li class="progress__cards-item-list">
+                                        Общая потеря веса за курс от 13 до 17 кг и больше
+                                    </li>
+                                    <li class="progress__cards-item-list">
+                                        Вы больше не переедаете, питаетесь правильно
+                                    </li>
+                                    <li class="progress__cards-item-list">
+                                        Вес стабилизируется, жир не накапливается
+                                    </li>
+                                </ul>
+                                <div class="progress__cards-item-img">
+                                    <img src="./assets/images/card-img-3.png" alt="progress">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <section class="methods">
+                <div class="methods__wrap">
+                    <div class="methods__title">KETTOX – научный подход к похудению</div>
+                    <div class="methods__description">
+                        Долгое время замены кето диете не было. И только в 2019 году было запатентовано новое средство
+                        для похудения KETTOX с содержанием природных альфа-кетонов, которые вызывают состояние кетоза
+                        без диет и голодания. Натуральная формула средства объединяет наиболее богатые природные
+                        источники альфа-кетонов, действие которых превосходит эффект кето диеты на 40%.
+                    </div>
+                    <div class="methods__eat-wrap">
+                        <div class="circle-5"></div>
+                        <div class="methods__eat-img">
+                            <img src="./assets/images/goroshek.png" alt="eat">
+                        </div>
+                        <div class="methods__eat">
+                            <div class="methods__eat-item">
+                                <div class="methods__eat-item-img">
+                                    <img src="./assets/images/mango.png" alt="mango">
+                                </div>
+                                <div class="methods__eat-item-info">
+                                    <div class="methods__eat-item-info-title">Африканское манго</div>
+                                    <p class="methods__eat-item-info-description">Поддерживает липидный обмен и
+                                        нормализует
+                                        сахар в крови</p>
+                                </div>
+                            </div>
+                            <div class="methods__eat-item">
+                                <div class="methods__eat-item-info">
+                                    <div class="methods__eat-item-info-title">Канадская голубика</div>
+                                    <p class="methods__eat-item-info-description">эффективно проникает и расщепляет
+                                        клетки “жировых депо”</p>
+                                </div>
+                                <div class="methods__eat-item-img">
+                                    <img src="./assets/images/golubika.png" alt="mango">
+                                </div>
+                            </div>
+                            <div class="methods__eat-item">
+                                <div class="methods__eat-item-info">
+                                    <div class="methods__eat-item-info-title">Готу кола</div>
+                                    <p class="methods__eat-item-info-description">Ускоряет водно-солевой обмен,
+                                        препятствует образованию целлюлита</p>
+                                </div>
+                                <div class="methods__eat-item-img">
+                                    <img src="./assets/images/kola.png" alt="mango">
+                                </div>
+                            </div>
+                            <div class="methods__eat-item">
+                                <div class="methods__eat-item-img">
+                                    <img src="./assets/images/yagoda.png" alt="mango">
+                                </div>
+                                <div class="methods__eat-item-info">
+                                    <div class="methods__eat-item-info-title">Ягода асаи </div>
+                                    <p class="methods__eat-item-info-description">Концентрат аминокислот и
+                                        микроэлементов, улучшает состояние кожи, волос, ногтей</p>
+                                </div>
+                            </div>
+                            <div class="methods__eat-item">
+                                <div class="methods__eat-item-img">
+                                    <img src="./assets/images/tamarind.png" alt="mango">
+                                </div>
+                                <div class="methods__eat-item-info">
+                                    <div class="methods__eat-item-info-title">Тамаринд</div>
+                                    <p class="methods__eat-item-info-description">Содержит природные альфа-кетоны,
+                                        ускоряет жиросжигание и запускает кетоз</p>
+                                </div>
+                            </div>
+                            <div class="methods__eat-item">
+                                <div class="methods__eat-item-info">
+                                    <div class="methods__eat-item-info-title">Худия гордони</div>
+                                    <p class="methods__eat-item-info-description">Содержит алканы и витамин Е, блокирует
+                                        чувство голода</p>
+                                </div>
+                                <div class="methods__eat-item-img">
+                                    <img src="./assets/images/Hoodia-gordonii.png" alt="mango">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-perview">
+                <div class="circle-3"></div>
+                <div class="circle-4"></div>
+                <div class="preview__wrap">
+                    <div class="preview-block">
+                        <div class="preview__info">
+                            <h1 class="h1">KETTOX – ЗАМЕНА КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h1>
+                            <h2 class="h2">С новым средством KETTOX можно сжечь до 17 кг жира, не прибегая к мучительной
+                                кето диете
+                            </h2>
+                        </div>
+                        <div class="preview__info-block">
+                            <div class="preview__img">
+                                <img src="./assets/images/goroh.png" alt="goroh">
+                            </div>
+                            <ul class="preview__list">
+                                <li class="preview__list-item">Вызывает состояние “кетоза” с первого применения </li>
+                                <li class="preview__list-item">Блокирует усвоение калорий из пищи</li>
+                                <li class="preview__list-item">Переключает организм на сжигание жира </li>
+                                <li class="preview__list-item">Без необходимости отказа от привычного питания</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="perview__product">
+                        <img src="./assets/images/kettox.png">
+                    </div>
+                    <div class="preview__info-block-mobile">
+                        <div class="preview__img">
+                            <img src="./assets/images/goroh.png" alt="goroh">
+                        </div>
+                        <ul class="preview__list">
+                            <li class="preview__list-item">Вызывает состояние “кетоза” с первого применения </li>
+                            <li class="preview__list-item">Блокирует усвоение калорий из пищи</li>
+                            <li class="preview__list-item">Переключает организм на сжигание жира </li>
+                            <li class="preview__list-item">Без необходимости отказа от привычного питания</li>
+                        </ul>
+                    </div>
+                    <form class="perview__form">
+                        <h3 class="h3">Акция действует только<br> на территории России и стран СНГ</h3>
+                        <div class="perview__form-price">
+                            <div class="perview__form-price-info">
+                                <div class="perview__form-price-old">Старая цена</div>
+                                <div class="perview__form-price-num">3889 руб</div>
+                            </div>
+                            <div class="perview__form-price-info">
+                                <div class="perview__form-price-new mobile-hide">Новая цена:</div>
+                                <div class="perview__form-price-new mobile-show hide">Промо-цена:</div>
+                                <div class="perview__form-price-num mobile-hide">142 руб</div>
+                                <div class="perview__form-price-num mobile-show hide">147*</div>
+                            </div>
+                        </div>
+                        <div class="perview__form-inputs">
+                            <label>Введите вашем имя</label>
+                            <input class="input-name" type="text" placeholder="Иванова И. И.">
+                            <label>Введите ваш телефон</label>
+                            <input type="text" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+                        </div>
+                        <p class="perview__form-text mobile-hide">Осталось всего 5 приборов на российском складе! НЕ
+                            УПУСТИ
+                            СВОЙ ШАНС! </p>
+                        <p class="perview__form-text mobile-show hide">Осталось упаковок со скидкой: <span>48</span> шт.
+                        </p>
+                        <button class="perview__form-btn" type="submit">ЗАКАЗАТЬ KETTOX</button>
+                        <div class="perview__form-agreement">
+                            <div class="perview__form-agreement-icon mobile-hide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" viewBox="0 0 27 32"
+                                    fill="none">
+                                    <path
+                                        d="M26.9261 4.99968C21.364 4.99968 17.1028 3.43964 13.4995 0C9.89658 3.43964 5.63558 4.99968 0.0738771 4.99968C0.0738771 13.9572 -1.81419 26.7888 13.4994 32C28.8141 26.7889 26.9261 13.9573 26.9261 4.99968ZM12.3873 20.7625L7.91428 16.3707L9.917 14.4048L12.3873 16.8304L17.0825 12.2211L19.0851 14.187L12.3873 20.7625Z"
+                                        fill="#E7E7E7" />
+                                </svg>
+                            </div>
+                            <p class="perview__form-agreement-text mobile-hide">Мы не разглашаем Ваши личные данные и не
+                                передаем оставленную Вами информацию третьим лицам.
+                                * При заказе курса</p>
+                            <p class="perview__form-alternate-text mobile-show hide">Уже получили на этой неделе: 297
+                                чел.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
